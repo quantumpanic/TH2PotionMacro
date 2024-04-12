@@ -1,11 +1,11 @@
 ABOUT THIS MACRO
-A tool to help quick drink potions without using default number keys.
-Can save a maximum of 3 types of potions. Use keys 1-3 corresponding to each saved potion.
-Also has a feature to quick drag potions in inventory to belt.
-Default number of potions to grab from inventory is 4. (Change this using PotionsToTake below.)
-Currently only works for 1920x1080 resolution, but feel free to test out other resolution.
-Desktop resolution MUST be the same as game resolution, or the color mapping won't work.
-Should work on relics and runes as well. (Needs testing.)
+- A tool to help quick drink potions without using default number keys.
+- Can save a maximum of 3 types of potions. Use keys 1-3 corresponding to each saved potion.
+- Also has a feature to quick drag potions in inventory to belt.
+- Default number of potions to grab from inventory is 4. (Change this using PotionsToTake below.)
+- Currently only works for 1920x1080 resolution, but feel free to test out other resolution.
+- Desktop resolution MUST be the same as game resolution, or the color mapping won't work.
+- Should work on relics and runes as well. (Needs testing.)\n
 
 HOW TO USE
 1. Use Alt + Shift + Q on your first belt slot AND the bottom left-most inventory slot. (Both required!)
