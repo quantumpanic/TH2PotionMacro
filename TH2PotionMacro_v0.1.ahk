@@ -1,4 +1,4 @@
-﻿;; Copyright (c) Hambali Hamdan 2024
+;; Copyright (c) Hambali Hamdan 2024
 ;; Refer to LICENSE.txt for more info
 
 ;; This macro tool was created strictly for hobby purposes to play Diablo Hellfire mod, The Hell 2.
@@ -153,9 +153,8 @@ return
 		Left := PinvX - 1
 		Down := PinvY + 29
 		Inv_col := GetColor(Left, PinvY)
-		Guicontrol,, Inv, InvPos: %PinvX%,%PinvY%
-		;Guicontrol,, Info, Inventory anchor set. Shift + Alt + 1/2/3 to register potion.
-		Guicontrol,, Info, Inv color %Inv_col%
+		Guicontrol,, Inv, InvPos: %PinvX%,%PinvY% - Inv color: %Inv_col%
+		Guicontrol,, Info, Inventory anchor set. Shift + Alt + 1/2/3 to register potion.
 	}
 return
 
@@ -223,7 +222,6 @@ $1:: ; DrinkP1
 		MouseY := PbeltY
 		Color := GetColor(PbeltX, PbeltY)
 		PixelGetColor, Color, MouseX, MouseY, RGB
-		;MsgBox, %MouseX% - %MouseY%, %Color% = %P1belt_col%
 		if (Color == P1belt_col){
 			PotionToDrink := CurBelt + 1
 			SendInput, %PotionToDrink%
@@ -282,10 +280,6 @@ $3:: ; DrinkP3
 return
 
 $!1:: ; fills the belt with Potion 1 from inventory
-	;PotionsToTake := CountInBelt(P1_col)
-	;PotionsLoop := %PotionsToTake% - %PotionsInBelt%
-	;MsgBox, %PotionsToTake%
-
 	CurCellX := 0
 	CurCellY := 0
 	PotionsTaken := 0
