@@ -114,10 +114,6 @@ return
 	P3belt_col := PresetP3belt
 	P3inv_col := PresetP3inv
 	Inv_col := PresetInv
-
-	Left := PinvX - 1
-	Down := PinvY + 29
-	PixelGetColor, Inv_col, Left, Down, RGB
 	
 	GuiControl, +c%P1belt_col%, P1belt
 	GuiControl, +c%P1inv_col%, P1inv
