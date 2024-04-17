@@ -47,7 +47,7 @@ PresetP2belt = 0x363636 ; color of full mana potion
 PresetP2inv = 0x484848
 PresetP3belt = 0xEDF3FF ; color of full holy water
 PresetP3inv = 0xEDF3FF
-PresetInv = 0xEDF3FF ; color of inventory border
+PresetInv = 0xDFC780 ; color of inventory border
 
 ScreenWidth = 1920 ; the width of your game resolution (must be same as display resolution!)
 CellSize = 29 ; the size of each cell in inventory or belt
@@ -124,7 +124,6 @@ return
 	Guicontrol,, Belt, BeltPos: %PbeltX%,%PbeltY%
 	Guicontrol,, Inv, InvPos: %PinvX%,%PinvY%
 	Guicontrol,, Info, Preset loaded!
-	Guicontrol,, Info, %Inv_col%
 
 	WindowPosX := PbeltX - 20
 	WindowPosY := PbeltY - 105
